@@ -1,0 +1,115 @@
+/* ================================
+   VARIÁVEIS
+================================ */
+
+:root {
+    /* Cores */
+    --primary: #9A2448;
+    --primary-dark: #741A36;
+    --primary-light: #C95C7C;
+    --pink: #F4D4D5;
+    --pink-light: #F3DDE3;
+    --background: #FFF8F5;
+    --surface: #FFFFFF;
+    --text: #302328;
+    --text-light: #6E6065;
+
+    --border: #E5CCD3;
+    /* Fonte */
+    --font: Arial, sans-serif;
+    /* Transição */
+    --transition: 250ms ease;
+}
+
+
+/* ================================
+   TEMA DARK
+================================ */
+
+[data-theme="dark"] {
+    --primary: #C95C7C;
+    --primary-dark: #A83E60;
+    --primary-light: #E58CA5;
+
+    --pink: #6E3A4A;
+    --pink-light: #4A2934;
+
+    --background: #21191C;
+    --surface: #2A2023;
+
+    --text: #F8EDEF;
+    --text-light: #CDBCC2;
+
+    --border: #52343E;
+}
+
+
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: var(--font);
+    line-height: 1.5;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* ================================
+   BASE
+================================ */
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+section {
+    padding: 4rem 2rem;
+}

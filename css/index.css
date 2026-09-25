@@ -1,0 +1,15 @@
+@import url(main.css);
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--pink);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    background-color: var(--);
+}
