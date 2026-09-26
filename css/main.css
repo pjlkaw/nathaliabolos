@@ -1,46 +1,51 @@
 /* ================================
-   VARIÁVEIS
+   FONTES
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ================================
+   TEMA
 ================================ */
 
 :root {
-    /* Cores */
-    --primary: #9A2448;
-    --primary-dark: #741A36;
-    --primary-light: #C95C7C;
-    --pink: #F4D4D5;
-    --pink-light: #F3DDE3;
-    --background: #FFF8F5;
-    --surface: #FFFFFF;
-    --text: #302328;
-    --text-light: #6E6065;
+    --primary: #D86B82;
+    --primary-dark: #BF566C;
 
-    --border: #E5CCD3;
-    /* Fonte */
-    --font: Arial, sans-serif;
-    /* Transição */
+    --background: #FFF9F9;
+    --background-secondary: #FFFFFF;
+
+    --text: #3E2723;
+    --text-light: #795548;
+
+    --white: #FFFFFF;
+    --border: #F3D5DC;
+
+    --font-title: 'Playfair Display', Georgia, serif;
+    --font-body: 'Poppins', sans-serif;
+
+    --max-width: 1200px;
     --transition: 250ms ease;
 }
 
 
 /* ================================
-   TEMA DARK
+   TEMA ESCURO
 ================================ */
 
 [data-theme="dark"] {
-    --primary: #C95C7C;
-    --primary-dark: #A83E60;
-    --primary-light: #E58CA5;
+    --primary: #E88CA0;
+    --primary-dark: #D56F87;
 
-    --pink: #6E3A4A;
-    --pink-light: #4A2934;
-
-    --background: #21191C;
-    --surface: #2A2023;
+    --background: #211B1D;
+    --background-secondary: #2A2225;
 
     --text: #F8EDEF;
-    --text-light: #CDBCC2;
+    --text-light: #D2BEC4;
 
-    --border: #52343E;
+    --white: #332A2D;
+    --border: #513A40;
 }
 
 
@@ -64,17 +69,12 @@ body {
     background-color: var(--background);
     color: var(--text);
 
-    font-family: var(--font);
-    line-height: 1.5;
+    font-family: var(--font-body);
+    line-height: 1.6;
 
     transition:
         background-color var(--transition),
         color var(--transition);
-}
-
-img {
-    display: block;
-    max-width: 100%;
 }
 
 a {
@@ -82,34 +82,22 @@ a {
     text-decoration: none;
 }
 
-ul,
-ol {
-    list-style: none;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-button,
-input,
-textarea,
-select {
-    font: inherit;
-}
-
-
-/* ================================
-   BASE
-================================ */
-
-button {
-    border: none;
-    cursor: pointer;
+p {
+    color: var(--text-light);
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    font-family: var(--font-title);
+    color: var(--text);
 }
 
-section {
-    padding: 4rem 2rem;
+address {
+    font-style: normal;
 }
