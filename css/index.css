@@ -180,14 +180,17 @@ header {
 
 .hero-cakes img:nth-child(1):hover {
     transform: rotate(-12deg) translateY(-8px);
+    z-index: 3;
 }
 
 .hero-cakes img:nth-child(2):hover {
     transform: translateY(-8px);
+    z-index: 3;
 }
 
 .hero-cakes img:nth-child(3):hover {
     transform: rotate(12deg) translateY(-8px);
+    z-index: 3;
 }
 
 
@@ -437,7 +440,7 @@ header {
 
 .order > div {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 35px 0;
     text-align: left;
