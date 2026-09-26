@@ -243,35 +243,17 @@ header {
 .cakes > div {
     max-width: var(--max-width);
     margin: 30px auto 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    overflow-x: auto;
-    padding: 10px 5px 25px;
-    scroll-snap-type: x mandatory;
-}
-
-.cakes > div::-webkit-scrollbar {
-    height: 7px;
-}
-
-.cakes > div::-webkit-scrollbar-track {
-    background-color: #F5E5E8;
-    border-radius: 10px;
-}
-
-.cakes > div::-webkit-scrollbar-thumb {
-    background-color: var(--border);
-    border-radius: 10px;
+    text-align: left;
 }
 
 .cakes article {
-    flex: 0 0 320px;
     padding: 30px;
     border: 1px solid var(--border);
     border-radius: 16px;
     background-color: var(--background);
-    text-align: left;
-    scroll-snap-align: start;
 }
 
 .cakes article h3 {
@@ -696,3 +678,31 @@ footer a {
     }
 }
 
+@media (max-width: 600px) {
+    .cakes > div {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 10px 5px 25px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .cakes > div::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    .cakes > div::-webkit-scrollbar-track {
+        background-color: #F5E5E8;
+        border-radius: 10px;
+    }
+
+    .cakes > div::-webkit-scrollbar-thumb {
+        background-color: var(--border);
+        border-radius: 10px;
+    }
+
+    .cakes article {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+}
