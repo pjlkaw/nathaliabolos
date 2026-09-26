@@ -202,6 +202,10 @@ header {
     border-bottom: 1px dashed var(--border);
 }
 
+.price-group ul li {
+    margin: 0 20px;
+}
+
 .price-group:last-of-type {
     border-bottom: none;
 }
@@ -394,7 +398,7 @@ header {
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:start;
     gap: 10px;
     width: 100%;
 }
@@ -436,6 +440,7 @@ header {
 
 .link-cardapio {
     background-color: white;
+    text-align: center;
     padding: 10px;
     border-radius: 20px;
 }
@@ -893,6 +898,10 @@ footer a {
 
     .hero-tittle {
         font-size: 3.3rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .hero-cakes {
