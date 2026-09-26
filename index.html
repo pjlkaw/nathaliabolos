@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathália Bolos Decorados em Jandira - SP. Bolos decorados, bolos a pronta entrega, doces, presentes e itens para festas.">
+    <meta name="keywords" content="bolos decorados, bolos em Jandira, confeitaria em Jandira, bolos a pronta entrega, doces em Jandira">
     <title>Nathália Bolos Decorados</title>
     <link rel="icon" href="assets/nathalia-bolos-favicon.ico">
     <link rel="stylesheet" href="css/index.css">
@@ -13,12 +14,18 @@
 
 <body>
     
+    <!-- MODAL DE PREÇOS -->
+    <section class="price-modal" id="priceModal" style="display: none">
+        
+    </section>
+
     <header>
         <nav class="navbar-container">
             <div>
                 <img src="assets/logo.png" alt="Nathália Bolos" width="100px">
             </div>
             <div>
+                <a class="link" href="">Cardápio</a>
                 <a class="link" href="#sobre">Sobre</a>
                 <a class="link" href="#bolos">Bolos</a>
                 <a class="link" href="#loja">Nossa loja</a>
@@ -39,11 +46,15 @@
 
                 <p>Bolos decorados para tornar cada ocasião ainda mais especial.</p>
 
-                <a class="hero-cta" href="https://wa.me/5511953741415">
-                    <div>
-                        <p>Faça sua encomenda <i class="fab fa-whatsapp"></i></p>
-                    </div>
-                </a>
+
+                <div class="hero-buttons">
+                    <a class="hero-cta" href="https://wa.me/5511953741415">
+                        <div>
+                            <p>Faça sua encomenda <i class="fab fa-whatsapp"></i></p>
+                        </div>
+                    </a>
+                    <a id="openModal" class="link link-cardapio" href="#cardapio">Veja o nosso cardápio <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
 
                 <p>
                     Segunda a sábado das 7h às 19h<br>

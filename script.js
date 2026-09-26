@@ -1,3 +1,24 @@
+const priceModal = document.getElementById("priceModal");
+const openModal = document.getElementById("openModal");
+
+fetch("/components/modal-cardapio.html")
+.then(response => response.text())
+.then(data => {
+    priceModal.innerHTML = data;
+
+    const closeModal = document.getElementById("closePriceModal");
+
+    openModal.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        priceModal.style.display = "flex";
+    });
+
+    closeModal.addEventListener("click", () => {
+        priceModal.style.display = "none";
+    });
+});
+
 const themeToggle = document.querySelector('.theme-toggle');
 const themeIcon = themeToggle?.querySelector('i');
 
