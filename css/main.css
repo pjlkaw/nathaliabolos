@@ -42,10 +42,16 @@
     --background-secondary: #2A2225;
 
     --text: #F8EDEF;
-    --text-light: #D2BEC4;
+    --text-light: #E7CDD4;
 
     --white: #332A2D;
     --border: #513A40;
+
+    --header-start: #311E22;
+    --header-end: #211B1D;
+    --nav-bg: #34272A;
+    --soft-panel: #2F2427;
+    --soft-panel-alt: #382D30;
 }
 
 

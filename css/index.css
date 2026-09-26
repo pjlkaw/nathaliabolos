@@ -5,7 +5,7 @@
 ================================ */
 
 header {
-    background: linear-gradient(180deg, #FFEBEF 0%, var(--background) 100%);
+    background: linear-gradient(180deg, var(--header-start, #FFEBEF) 0%, var(--background) 100%);
 }
 
 .navbar-container {
@@ -16,6 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #F8DADB;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .navbar-container img {
@@ -28,10 +29,35 @@ header {
     gap: 25px;
 }
 
+.theme-toggle {
+    position: fixed;
+    z-index: 999;
+    bottom: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background-color: var(--background-secondary);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.theme-toggle i {
+    font-size: 1rem;
+}
+
 .link {
     font-size: 15px;
     font-weight: 500;
     transition: color var(--transition);
+    color: black;
 }
 
 .link:hover {
@@ -293,7 +319,7 @@ header {
 }
 
 .gallery > div::-webkit-scrollbar-track {
-    background-color: #F5E5E8;
+    background-color: var(--soft-panel-alt, #F5E5E8);
     border-radius: 10px;
 }
 
@@ -470,7 +496,7 @@ header {
 
 .contact {
     padding: 70px 20px;
-    background-color: #FFF0F3;
+    background-color: var(--soft-panel, #FFF0F3);
     text-align: center;
 }
 
